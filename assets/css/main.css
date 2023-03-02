@@ -1,0 +1,73 @@
+*{
+    /* outline: 1px dotted lightblue; */
+}
+
+:root{
+    --primary-color    : #593F42;
+    --secondary-color  : #F2E3B3;
+    --tertiary-color   : #F2B279;
+    --quartenary-color : #D97855;
+    --quinary-color    : #D9AC9C;
+    --light-color      : white;
+    --dark-color       : black;
+    --grayscale        : #FFF8E3;
+
+    --extra-small-size: 4px;
+    --small-size: 8px;
+    --medium-size: 16px;
+    --large-size: 32px;
+    --extra-large-size: 64px;
+}
+
+.header{
+    background: rgb(217,120,85);
+    /* alguns navegadores mais antigos podem não ler o código de baixo. Por isso tem dois backgrounds */
+    background: linear-gradient(0deg, rgba(217,120,85,1) 0%, rgba(242,178,121,1) 35%, rgba(242,227,179,1) 100%);
+}
+
+.header__name{
+    color: var(--light-color);
+}
+
+.header__social-icons{
+    color: var(--light-color);
+}
+
+
+.skills{
+}
+
+.skills__left-column{
+    background: var(--grayscale);
+}
+
+.skills__title{
+    color: var(--quartenary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.skills__label{
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    transition: all 1s;
+}
+
+.skills__label:hover{
+    color: var(--quartenary-color);
+    border-radius: 4px;
+    transition: all .5s;
+}
+
+.skills__divider{
+    opacity: 0.5;
+    width: 100%;
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: var(--medium-size);
+    background: var(--quartenary-color);
+}
+
+.skills__right-column{}
+
